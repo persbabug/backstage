@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: gcp-vm-instance
+  description: Google Cloud VM used for web services
+  namespace: default
+spec:
+  type: virtual-machine
+  owner: team-gcp-owners
+  lifecycle: production
+  system: your-system
+  cloudProvider: gcp
+  gce:
+    instanceName: idp-backstage
+    zone: us-central1-f  # Adjust to your VM's zone
+    project: smiling-destiny-429806-g8
