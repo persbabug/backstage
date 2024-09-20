@@ -6,7 +6,7 @@ metadata:
   namespace: default
 spec:
   type: virtual-machine
-  owner: team-gcp-owners
+  owner: user:default/guest
   lifecycle: production
   system: your-system
   cloudProvider: gcp
