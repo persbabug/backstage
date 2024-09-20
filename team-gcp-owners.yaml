@@ -1,0 +1,14 @@
+# team-gcp-owners.yaml
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: team-gcp-owners
+  namespace: default
+  description: Team responsible for GCP infrastructure and VM management
+spec:
+  type: team
+  parent: group:default/guests
+  members:
+    - user:default/johndoe
+    - user:default/janedoe
+  children: []
