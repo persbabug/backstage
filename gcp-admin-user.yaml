@@ -2,7 +2,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
-  name: GCPAdminUser
+  name: gcpadminuser
   namespace: default
   description: GCP Administrator User responsible for managing GCP infrastructure
 spec:
@@ -11,4 +11,4 @@ spec:
     email: gcpadmin@example.com
     picture: https://example.com/path/to/avatar.jpg  # Optional: URL for the user's avatar
   memberOf: 
-    - group:default/GCPAdmin  # This references the GCPAdmin group, which will be created
+    - group:default/gcpadmin  # This references the GCPAdmin group, which will be created
