@@ -14,3 +14,5 @@ spec:
     instanceName: idp-backstage
     zone: us-central1-f  # Adjust to your VM's zone
     project: smiling-destiny-429806-g8
+  annotations:
+    backstage.io/managed-by-location: https://console.cloud.google.com/compute/instancesDetail/zones/us-central1-f/instances/idp-backstage
