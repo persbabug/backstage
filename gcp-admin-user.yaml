@@ -1,0 +1,14 @@
+# gcp-admin-user.yaml
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: GCPAdminUser
+  namespace: default
+  description: GCP Administrator User responsible for managing GCP infrastructure
+spec:
+  profile:
+    displayName: GCP Admin
+    email: gcpadmin@example.com
+    picture: https://example.com/path/to/avatar.jpg  # Optional: URL for the user's avatar
+  memberOf: 
+    - group:default/GCPAdmin  # This references the GCPAdmin group, which will be created
